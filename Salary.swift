@@ -112,8 +112,8 @@ func salary() {
         print("Your total income before taxes is", String(format: "%.2f", salaryTotal) + "$.")
     } else {
         // Display salary without qualifying for bonus
-        print("\(userYearsInt) years does not qualify for a bonus, your total income before taxes is" 
-        , String(format: "%.2f", salaryTotal) + "$.")
+        print("\(userYearsInt) years does not qualify for a bonus, your total income before taxes is"
+            , String(format: "%.2f", salaryTotal) + "$.")
     }
 
 }
