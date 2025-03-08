@@ -79,7 +79,7 @@ func salary() {
         guard let userYearsIntLoop = Int(userYearsString) else {
             // Error message when years is not a number or is a decimal
             print("Invalid input: \(userYearsString)."
-                ,   "Please enter number of years greater than 0 and less than or equal to 90.")
+                , "Please enter number of years greater than 0 and less than or equal to 90.")
             // Must use continue to go back to the start of the loop with guard
             continue
         }
@@ -91,7 +91,7 @@ func salary() {
         if userYearsInt <= 0 || userYearsInt > MAX_YEARS {
             // Error message
             print("Invalid input: \(userYearsInt)."
-            ,   "Please enter number of years greater than 0 and less than or equal to 90.")
+                , "Please enter number of years greater than 0 and less than or equal to 90.")
         }
     }
     // Calculate salary and bonus by calling calculateSalary function
@@ -112,7 +112,8 @@ func salary() {
         print("Your total income before taxes is", String(format: "%.2f", salaryTotal) + "$.")
     } else {
         // Display salary without qualifying for bonus
-        print("\(userYearsInt) years does not qualify for a bonus, your total income before taxes is", String(format: "%.2f", salaryTotal) + "$.")
+        print("\(userYearsInt) years does not qualify for a bonus, your total income before taxes is" 
+        , String(format: "%.2f", salaryTotal) + "$.")
     }
 
 }
