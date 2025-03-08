@@ -78,7 +78,8 @@ func salary() {
         // Safely convert user width as a string to double and use guard to make sure input is valid
         guard let userYearsIntLoop = Int(userYearsString) else {
             // Error message when years is not a number or is a decimal
-            print("Invalid input: \(userYearsString). Please enter number of years greater than 0 and less than or equal to 90.")
+            print("Invalid input: \(userYearsString)."
+                ,   "Please enter number of years greater than 0 and less than or equal to 90.")
             // Must use continue to go back to the start of the loop with guard
             continue
         }
@@ -89,7 +90,8 @@ func salary() {
         // If to see if height and width are greater than 0
         if userYearsInt <= 0 || userYearsInt > MAX_YEARS {
             // Error message
-            print("Invalid input: \(userYearsInt). Please enter number of years greater than 0 and less than or equal to 90.")
+            print("Invalid input: \(userYearsInt)."
+            ,   "Please enter number of years greater than 0 and less than or equal to 90.")
         }
     }
     // Calculate salary and bonus by calling calculateSalary function
@@ -97,7 +99,8 @@ func salary() {
     // Learnt functions in swift from class
     // Learnt how to use arrays in swift
     // From https://www.programiz.com/swift-programming/arrays
-    let resultsDoubleArray: [Double] = calculateSalary(userYearsInt: userYearsInt, userSalaryDouble: userSalaryDouble)
+    let resultsDoubleArray: [Double] =
+    calculateSalary(userYearsInt: userYearsInt, userSalaryDouble: userSalaryDouble)
     // Get bonusTotal and salaryTotal from results array
     let bonusTotal: Double = resultsDoubleArray[0]
     let salaryTotal: Double = resultsDoubleArray[1]
